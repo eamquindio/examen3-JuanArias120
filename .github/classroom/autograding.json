@@ -1,0 +1,214 @@
+{
+  "tests": [
+    {
+      "name": "🔧 Compilación del proyecto (5 pts)",
+      "setup": "",
+      "run": "mvn clean compile",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "📋 REQ1 [5pts] Constructor Propietario(cedula, nombre)",
+      "setup": "",
+      "run": "mvn test -Dtest=PropietarioTest#testConstructor*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "📋 REQ1 [4pts] buscarPropietario(cedula) - foreach",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testBuscarPropietario*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "📋 REQ1 [5pts] registrarPropietario(cedula, nombre) - if validación",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testRegistrarPropietario*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🚗 REQ2 [5pts] Constructor Vehiculo(placa, modelo, color, prop, tipo)",
+      "setup": "",
+      "run": "mvn test -Dtest=VehiculoTest#testConstructor*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🚗 REQ2 [4pts] buscarVehiculo(placa) - foreach",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testBuscarVehiculo*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "🚗 REQ2 [5pts] registrarVehiculo(...) - if validación",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testRegistrarVehiculo*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🎫 REQ3.1 [5pts] acumularHoras(horas)",
+      "setup": "",
+      "run": "mvn test -Dtest=PropietarioTest#testAcumularHoras*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🎫 REQ3.1 [10pts] obtenerCategoria() - if-else múltiple",
+      "setup": "",
+      "run": "mvn test -Dtest=PropietarioTest#testObtenerCategoria*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "🎫 REQ3.1 [8pts] obtenerDescuento() - switch",
+      "setup": "",
+      "run": "mvn test -Dtest=PropietarioTest#testObtenerDescuento*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "🎫 REQ3.2 [7pts] obtenerTarifaHora() - switch",
+      "setup": "",
+      "run": "mvn test -Dtest=VehiculoTest#testObtenerTarifaHora*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 7
+    },
+    {
+      "name": "🎫 REQ3.3 [5pts] calcularHoras()",
+      "setup": "",
+      "run": "mvn test -Dtest=ServicioTest#testCalcularHoras*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🎫 REQ3.3 [10pts] calcularCosto() - fórmula compleja",
+      "setup": "",
+      "run": "mvn test -Dtest=ServicioTest#testCalcularCosto*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "🎫 REQ3.3 [5pts] Constructor Servicio(horaIng, horaSal, vehiculo)",
+      "setup": "",
+      "run": "mvn test -Dtest=ServicioTest#testGetters*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🎫 REQ3.4 [5pts] acumularHorasCliente(cedula, horas) - delegación",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testAcumularHorasCliente*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "🎫 REQ3.4 [12pts] registrarServicio(placa, horaIng, horaSal) - if múltiples",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testRegistrarServicio*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 12
+    },
+    {
+      "name": "📊 REQ4a [8pts] calcularTotalRecaudado() - foreach acumulador",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testCalcularTotalRecaudado*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    },
+    {
+      "name": "📊 REQ4b [5pts] esVIP() - if simple",
+      "setup": "",
+      "run": "mvn test -Dtest=PropietarioTest#testEsVIP*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "📊 REQ4b [7pts] contarClientesVIP() - foreach contador + if",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testContarClientesVIP*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 7
+    },
+    {
+      "name": "📊 REQ4c [10pts] obtenerClienteMasHoras() - foreach máximo",
+      "setup": "",
+      "run": "mvn test -Dtest=ParqueaderoTest#testObtenerClienteMasHoras*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "🔗 Integración [10pts] Todos los tests pasan",
+      "setup": "",
+      "run": "mvn clean test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 15,
+      "points": 10
+    }
+  ]
+}
